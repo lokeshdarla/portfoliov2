@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoIosArrowRoundBack } from "react-icons/io";
 
 const getPostContent = () => {
-  const file = `/Users/lokeshnagasaidarla/Developer/webdev/portfoliov2/src/app/blog/gradio-t.md`;
+  const file = `src/app/blog/gradio-t.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
   return matterResult;
