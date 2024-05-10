@@ -21,7 +21,7 @@ export function AuroraBackgroundDemo() {
       >
         <Image
           className="ml-0 h-48 w-48  mb-4 rounded-full object-cover transition-transform hover:scale-105 md:ml-8 md:h-48 md:w-48 md:rounded-full "
-          src="/images/Profile.png"
+          src="/images/profile.png"
           alt="Lokesh Naga Sai"
           width={200}
           height={200}
