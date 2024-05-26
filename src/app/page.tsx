@@ -11,18 +11,16 @@ import { LampDemo } from "@/components/LampDemo"
 function Page() {
   return (
     <>
-      <AuroraBackground>
-        <FloatingNavDemo />
-        <AuroraBackgroundDemo />
-        <br />
-        <AboutSection />
-        <br />
-        <BlogSection />
-        <br />
-        <BentoGridDemo />
-        <br />
-        <ContactSection />
-      </AuroraBackground>
+      <FloatingNavDemo />
+      <AuroraBackgroundDemo />
+      <br />
+      <AboutSection />
+      <br />
+      <BlogSection />
+      <br />
+      <BentoGridDemo />
+      <br />
+      <ContactSection />
     </>
   )
 }
