@@ -10,7 +10,7 @@ import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { Button } from "./MovingBorder";
 
-export const FloatingNav = ({
+export const FloatingNavUtil = ({
   navItems,
   className,
 }: {
@@ -67,10 +67,7 @@ export const FloatingNav = ({
           <span>Connect</span>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button>
-        {/* <Button
-          borderRadius="1.75rem"
-          className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 px-6 py-2"
-        >Connect</Button> */}
+
 
       </motion.div>
     </AnimatePresence>

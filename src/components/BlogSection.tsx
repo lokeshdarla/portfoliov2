@@ -13,11 +13,11 @@ const BlogSection: React.FC<BlogSectionProps> = () => {
   }
 
   return (
-    <div id="blog" className="flex h-screen justify-center md:items-start">
+    <div id="blog" className="flex bg-white dark:bg-black h-screen justify-center md:items-start">
       <div className="relative flex flex-col items-start justify-center">
         <div className="max-w-md px-5 py-8">
-          <h1 className="text-2xl font-bold text-gray-600">I write, sometimes</h1>
-          <p className="mt-2 text-gray-600">About Tech, DSA, learning, tutorials, and life.</p>
+          <h1 className="text-2xl font-bold text-gray-600 dark:text-gray-100">I write, sometimes</h1>
+          <p className="mt-2 text-gray-600 dark:text-gray-100">About Tech, DSA, learning, tutorials, and life.</p>
         </div>
         <div className="flex items-start justify-start whitespace-nowrap border-b border-gray-200 px-5 dark:border-gray-700">
           {sections.map((section) => (

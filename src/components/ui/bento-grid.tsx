@@ -49,7 +49,7 @@ export const BentoGridItem = ({
       <Image src={header || ''} alt="image" width={600} height={300} className="h-44 object-cover rounded-xl" />
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {repoURL && (
-          <Link href={repoURL} className="px-3 py-1 border w-fit my-2 flex items-center gap-2 rounded-2xl text-sm">
+          <Link href={repoURL} className="px-3 text-black dark:text-white  dark:border-white/[0.2] py-1 border w-fit my-2 flex items-center gap-2 rounded-2xl text-sm">
             Github <FaExternalLinkAlt />
           </Link>
         )}

@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
-import { FloatingNav } from "./ui/floating-navbar";
+import { FloatingNavUtil } from "./ui/floating-navbar";
 import { IconHome, IconMessage, IconUser, IconWritingSign, IconStackBack } from "@tabler/icons-react";
+import { useTheme } from "@/context/ThemeContext";
 
-export function FloatingNavDemo() {
+export function FloatingNav() {
+  const { theme, toggleTheme } = useTheme();
   const navItems = [
     {
       name: "Home",
@@ -39,7 +41,7 @@ export function FloatingNavDemo() {
   ];
   return (
     <div className="relative  w-full">
-      <FloatingNav navItems={navItems} />
+      <FloatingNavUtil navItems={navItems} />
     </div>
   );
 }

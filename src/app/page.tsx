@@ -1,28 +1,38 @@
-import BlogSection from "@/components/BlogSection"
-import { BentoGridDemo } from "@/components/BentoGrid"
-import { FloatingNavDemo } from "@/components/Navbar"
-import ContactSection from "@/components/Contact"
-import { AuroraBackgroundDemo } from "@/components/AuraBackGround"
-import { AuroraBackground } from "@/components/ui/aurora-background"
-import AboutSection from "@/components/About"
-import { LampDemo } from "@/components/LampDemo"
-
+'use client'
+import { useEffect, useState } from "react";
+import Layout from "@/components/Layout";
+import { SelectedWorks } from "@/components/SelectedWorks";
+import { Main } from "@/components/MainSection";
+import Loading from "@/components/Loading";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 function Page() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <ThemeProvider>
+        <div className="h-screen bg-white dark:bg-black flex items-center justify-center">
+          <Loading />
+        </div>
+      </ThemeProvider>
+    );
+  }
+
   return (
-    <>
-      <FloatingNavDemo />
-      <AuroraBackgroundDemo />
-      <br />
-      <AboutSection />
-      <br />
-      <BlogSection />
-      <br />
-      <BentoGridDemo />
-      <br />
-      <ContactSection />
-    </>
-  )
+    <Layout>
+      <Main />
+      <SelectedWorks />
+    </Layout>
+  );
 }
 
-export default Page
+export default Page;

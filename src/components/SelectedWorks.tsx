@@ -11,15 +11,15 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 
-export function BentoGridDemo() {
+export function SelectedWorks() {
   return (
-    <div id="works" className="relative z-30 flex flex-col items-center justify-center
+    <div id="works" className="relative z-30 flex flex-col bg-white dark:bg-black items-center justify-center
     ">
-      <div id="works" className="text-left dark:bg-black  dark:bg-grid-white/[0.1] bg-grid-black/[0] relative flex items-start md:justify-start justify-center ">
-        <p className="text-4xl sm:text-7xl text-left font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-700 py-8 mt-10">
-          Works
+      {/* <div id="works" className="text-left dark:bg-black  relative flex items-start md:justify-start justify-start ">
+        <p className="text-4xl sm:text-5xl text-left font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 to-neutral-900 py-8 mt-10">
+          Selected <span className="text-[#9551fa]">Works</span>
         </p>
-      </div>
+      </div> */}
       <div className="z-45 items-center justify-center flex max-w-7xl">
         <BentoGrid className="max-w-screen  md:px-20 px-2 mx-auto">
           {items.map((item, i) => (
