@@ -2,6 +2,8 @@ import React from 'react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { GoMail } from "react-icons/go";
 import Link from 'next/link'
+import { RxTextAlignRight } from "react-icons/rx";
+import Navbar from './Navbar';
 
 const Header = () => {
   const email = 'lokeshnagasaidarla@gmail.com'
@@ -11,9 +13,9 @@ const Header = () => {
         <Link href={'/'} className="text-sm text-gray-500 sm:text-center dark:text-gray-400">@ lokeshnagasaidarla
         </Link>
         <div className="flex items-center gap-2 text-black dark:text-white">
-          <Link href={'#'} className=''>
+          {/* <Link href={'/about'} className=''>
             About
-          </Link>
+          </Link> */}
 
           <Link
             href={'https://www.linkedin.com/in/lokeshnagasaidarla/'}
@@ -22,7 +24,9 @@ const Header = () => {
 
           >
             <FaLinkedinIn size={20} />
+
           </Link>
+
           <Link
             href={`mailto:${email}`}
             className="bg-white text-sm hover:bg-neutral-100  rounded-full w-fit  text-black dark:text-white dark:bg-black p-3 "
@@ -30,6 +34,7 @@ const Header = () => {
           >
             <GoMail size={20} />
           </Link>
+          <Navbar />
         </div>
       </div>
     </header>
