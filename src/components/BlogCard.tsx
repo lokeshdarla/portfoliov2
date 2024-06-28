@@ -30,7 +30,7 @@ function BlogCard({ category }: BlogCardProps) {
                           alt={item.title}
                           width={100}
                           height={100}
-                          className="rounded-lg shadow-lg"
+                          className="rounded-lg "
                         />
                       </div>
                       <div className="flex flex-col items-start justify-center">
