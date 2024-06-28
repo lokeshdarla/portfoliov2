@@ -11,6 +11,16 @@ export default interface Article {
 
 export const articles: Article[] = [
   {
+    index: 3,
+    image_path: "https://theblue.ai/wp-content/uploads/2023/09/1200x1200px.png",
+    title: "Retrieval-Augmented Generation",
+    description: "Enhancing Security with Machine Learning and Deep Learning",
+    date: "11-02-2024",
+    readTime: "5 Min Read",
+    category: "Stories",
+    path: "rag-blog",
+  },
+  {
     index: 0,
     image_path: "https://yt3.googleusercontent.com/GsP5Yvc5jOSop4SJf_75wdOYaEbO-7ZyYhnARodAGRnEMh-OQjGPGzUz2ZtzsHPtqFyHGvmbEtI=s900-c-k-c0x00ffffff-no-rj",
     title: "React + Firebase",
@@ -18,7 +28,7 @@ export const articles: Article[] = [
     date: "11-02-2024",
     readTime: "5 Min Read",
     category: "Coding",
-    path: "javascript:void(0)",
+    path: "react-firebase",
   },
   {
     index: 1,
@@ -28,7 +38,7 @@ export const articles: Article[] = [
     date: "11-02-2024",
     readTime: "5 Min Read",
     category: "Tutorials",
-    path: "javascript:void(0)",
+    path: "jwt-auth",
   },
   {
     index: 2,
@@ -38,16 +48,7 @@ export const articles: Article[] = [
     date: "11-02-2024",
     readTime: "5 Min Read",
     category: "Stories",
-    path: "javascript:void(0)",
+    path: "gradio-t",
   },
-  {
-    index: 3,
-    image_path: "https://img.freepik.com/premium-photo/cctv-camera-logo_1003030-9405.jpg",
-    title: "The Third Eye",
-    description: "Enhancing Security with Machine Learning and Deep Learning",
-    date: "11-02-2024",
-    readTime: "5 Min Read",
-    category: "Stories",
-    path: "javascript:void(0)",
-  }
+
 ];

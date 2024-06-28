@@ -1,3 +1,8 @@
+---
+title: "Gradio: Simplifying Interactive UI Development for ML Models"
+date: "July 08, 2023"
+---
+
 ![https://miro.medium.com/v2/resize:fit:1400/1*T_9ojUur5I6hNw4mqkXAlg.png](https://miro.medium.com/v2/resize:fit:1400/1*T_9ojUur5I6hNw4mqkXAlg.png)
 
 **R**ecently, I came across a handy API called **Gradio**, which has the potential to revolutionize the way we develop interactive user interfaces (UIs) for machine learning models. Gradio provides a simple and intuitive solution for building UIs that allow users to interact with machine learning models seamlessly. With Gradio, even those without extensive programming knowledge can harness the power of machine learning in their applications. Let’s delve deeper into what makes Gradio so remarkable and how it simplifies UI development for machine learning models.

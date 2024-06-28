@@ -4,22 +4,23 @@ import matter from "gray-matter";
 import Link from "next/link";
 import { FaChevronLeft } from "react-icons/fa";
 import Layout from "@/components/Layout";
+import BlogSection from "@/components/BlogSection";
 
-const getPostContent = () => {
-  const file = `src/app/blog/gradio-t.md`;
-  const content = fs.readFileSync(file, "utf8");
-  const matterResult = matter(content);
-  return matterResult;
-};
+// const getPostContent = () => {
+//   const file = `src/app/blog/gradio-t.md`;
+//   const content = fs.readFileSync(file, "utf8");
+//   const matterResult = matter(content);
+//   return matterResult;
+// };
 
 
 const PostPage = () => {
-  const post = getPostContent();
+  // const post = getPostContent();
   return (
     <Layout>
 
 
-      <div className=" flex flex-col bg-white dark:bg-black items-center justify-center relative">
+      {/* <div className=" flex flex-col bg-white dark:bg-black items-center justify-center relative">
 
         <div className="my-12 text-center">
           <div className="inline-flex items-center justify-center w-full">
@@ -30,10 +31,11 @@ const PostPage = () => {
         </div>
         <div className="px-5">
           <article className="prose md:prose-md prose-sm  dark:text-white lg:prose-lg prose-img:rounded-xl">
-            <Markdown>{post.content}</Markdown>
+            <Markdown>{post.content}</Markdown> 
           </article>
         </div>
-      </div>
+      </div> */}
+      <BlogSection />
     </Layout>
   );
 };

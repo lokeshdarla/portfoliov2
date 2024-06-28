@@ -24,9 +24,9 @@ const BlogSection: React.FC<BlogSectionProps> = () => {
             <button
               key={section}
               onClick={() => handleSectionClick(section)}
-              className={`-mb-px inline-flex h-10 items-center px-2 py-2 text-center hover:border-b-2 ${activeSection === section
-                ? '-px-1 border-b-2 border-blue-500 bg-transparent text-blue-600 sm:px-4 dark:border-blue-400 dark:text-blue-300'
-                : '-px-1 cursor-base whitespace-nowrap border-b-2 border-transparent bg-transparent text-gray-700 hover:border-gray-400 focus:outline-none sm:px-4 dark:text-white'
+              className={`-mb-px inline-flex h-10 items-center px-2 py-2 text-center hover:border-b ${activeSection === section
+                ? '-px-1 border-b border-blue-500 bg-transparent text-blue-600 sm:px-4 dark:border-blue-400 dark:text-blue-300'
+                : '-px-1 cursor-base whitespace-nowrap border-b-2 border-transparent bg-transparent text-gray-700 hover:border-gray-400 dark:hover:border-gray-600 focus:outline-none sm:px-4 dark:text-white'
                 }`}
             >
               <span className="mx-1 text-sm sm:text-base">{section}</span>

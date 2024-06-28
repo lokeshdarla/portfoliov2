@@ -75,29 +75,29 @@ const Navbar = () => {
             <div className="flex flex-col text-lg  gap-2">
               <Link
 
-                className=" text-gray-700  transition-colors duration-300 transform dark:text-gray-200  mx-4"
+                className=" text-gray-500 hover:text-gray-900  transition-colors duration-300 transform dark:text-gray-200  mx-4"
                 href="/about"
               >
                 About
               </Link>
-              <a
-                className=" text-gray-700 transition-colors duration-300 transform dark:text-gray-200  mx-4 "
-                href="#"
+              <Link
+                className=" text-gray-500 hover:text-gray-900 transition-colors duration-300 transform dark:text-gray-200  mx-4 "
+                href="/my-shelf"
               >
                 My Shelf
-              </a>
-              <a
-                className=" text-gray-700 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
+              </Link>
+              <Link
+                className=" text-gray-500 hover:text-gray-900 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
                 href="#"
               >
                 My CV
-              </a>
-              <a
-                className=" text-gray-700 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
+              </Link>
+              <Link
+                className=" text-gray-500 hover:text-gray-900 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
                 href="#"
               >
                 My projects
-              </a>
+              </Link>
             </div>
             <div className='flex flex-row text-lg gap-2 mt-2 mx-2'>
 
