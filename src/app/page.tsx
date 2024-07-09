@@ -20,7 +20,7 @@ function Page() {
   if (loading) {
     return (
       <ThemeProvider>
-        <div className="h-screen bg-white dark:bg-black flex items-center justify-center">
+        <div className="h-screen bg-white dark:bg-black flex items-center justify-center border-none">
           <Loading />
         </div>
       </ThemeProvider>

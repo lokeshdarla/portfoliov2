@@ -22,12 +22,12 @@ export default function BreadcrumbUtil() {
   }
 
   return (
-    <div className='flex items-center justify-center '>
-      <Breadcrumb>
-        <BreadcrumbList>
+    <div className='flex items-center justify-center dark:bg-black'>
+      <Breadcrumb >
+        <BreadcrumbList >
           <BreadcrumbItem>
             <Link href="/" passHref>
-              <BreadcrumbLink>Home</BreadcrumbLink>
+              <BreadcrumbLink className='dark:text-white'>Home</BreadcrumbLink>
             </Link>
           </BreadcrumbItem>
           {
@@ -38,10 +38,10 @@ export default function BreadcrumbUtil() {
                   <BreadcrumbSeparator />
                   <BreadcrumbItem>
                     {index === pathnames.length - 1 ? (
-                      <BreadcrumbPage>{value.charAt(0).toUpperCase() + value.slice(1)}</BreadcrumbPage>
+                      <BreadcrumbPage className='dark:text-gray-50'>{value.charAt(0).toUpperCase() + value.slice(1)}</BreadcrumbPage>
                     ) : (
                       <Link href={to} passHref>
-                        <BreadcrumbLink>{value.charAt(0).toUpperCase() + value.slice(1)}</BreadcrumbLink>
+                        <BreadcrumbLink className='dark:text-gray-50'>{value.charAt(0).toUpperCase() + value.slice(1)}</BreadcrumbLink>
                       </Link>
                     )}
                   </BreadcrumbItem>
