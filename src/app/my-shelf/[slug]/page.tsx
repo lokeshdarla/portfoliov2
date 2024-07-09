@@ -37,7 +37,7 @@ const PostPage = ({ params }: PostProps) => {
           </h1>
         </div>
         <div className="px-5">
-          <article className="prose overscroll-contain prose-img:rounded-xl dark:prose-invert">
+          <article className="prose sm:prose-sm md:prose-md lg:prose-lg overscroll-contain prose-img:rounded-xl dark:prose-invert">
             <Markdown>{post.content}</Markdown>
           </article>
         </div>
