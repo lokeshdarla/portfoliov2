@@ -18,7 +18,7 @@ function BlogCard({ category }: BlogCardProps) {
             (item: Article, idx: number) =>
               ((category === "Latest") ||
                 item.category === category) && (
-                <li
+                <Link href={`/my-shelf/${item.path}`}
                   key={idx}
                   className="mx-4 py-5 duration-150 dark:border-gray-500 border-gray-300 hover:border-gray-400 dark:hover:border-gray-400"
                 >
@@ -54,7 +54,7 @@ function BlogCard({ category }: BlogCardProps) {
                       </Link>
                     </div>
                   </div>
-                </li>
+                </Link>
               )
           )}
         </ul>
