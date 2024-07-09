@@ -10,6 +10,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import { title } from "process";
 
 export function SelectedWorks() {
   return (
@@ -45,7 +46,27 @@ const Skeleton = () => (
 );
 const items = [
   {
-
+    title: "Paperly-AI",
+    description: "PDF chat bot with microservice Architecture with Python as  AI Service with Gemini and ExpressJS",
+    header: "/images/paperly-ai.gif",
+    repoURL: "https://github.com/paperly-ai",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Trade Tide",
+    description: "React-based trading website featuring real-time stock updates. Built with Shadcn.",
+    header: "/images/tradetide.gif",
+    repoURL: "https://github.com/lokeshdarla/TradeTide",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Ui-FRY",
+    description: "Landing Page inspired from figma design.",
+    header: "/images/ui-fry.gif",
+    repoURL: "https://github.com/lokeshdarla/uifry-landing-page",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
     title: "Ollivander's Store",
     description: "Ollivanders Store is a Harry Potter-themed E-Commerce Wand store where you can purchase wands of your choice.",
     header: "https://raw.githubusercontent.com/lokeshdarla/Ollivanders_store/main/working_images/working_image_1.png",
