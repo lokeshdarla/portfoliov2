@@ -11,7 +11,7 @@ interface PostProps {
 }
 
 const getPostContent = (slug: string) => {
-  const filePath = `src/app/my-shelf/${slug}.md`;
+  const filePath = path.resolve(process.cwd(), `src/app/my-shelf/${slug}.md`);
   const content = fs.readFileSync(filePath, 'utf8');
 
 

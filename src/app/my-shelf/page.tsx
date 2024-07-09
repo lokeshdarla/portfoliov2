@@ -6,12 +6,6 @@ import { FaChevronLeft } from "react-icons/fa";
 import Layout from "@/components/Layout";
 import BlogSection from "@/components/BlogSection";
 
-// const getPostContent = () => {
-//   const file = `src/app/blog/gradio-t.md`;
-//   const content = fs.readFileSync(file, "utf8");
-//   const matterResult = matter(content);
-//   return matterResult;
-// };
 
 
 const PostPage = () => {

@@ -88,13 +88,14 @@ const Navbar = () => {
               </Link>
               <Link
                 className=" text-gray-500 hover:text-gray-900 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
-                href="#"
+                href="https://lokeshdarla.notion.site/Lokesh-Naga-Sai-Darla-616b38b06c1d4a3aa91fd8654601fdd4?pvs=74"
+                target='_blank'
               >
                 My CV
               </Link>
               <Link
                 className=" text-gray-500 hover:text-gray-900 transition-colors duration-300 transform dark:text-gray-200   mx-4 "
-                href="#"
+                href="https://github.com/lokeshdarla?tab=repositories"
               >
                 My projects
               </Link>
@@ -119,7 +120,7 @@ const Navbar = () => {
                 <FaGithub size={20} />
               </Link>
               <Link
-                href={`https://github.com/lokeshdarla`}
+                href={`https://x.com/LokeshDarla1011`}
                 target='_blank'
                 className=" text-sm  rounded-full w-fit  text-black dark:text-white  p-3 "
 
