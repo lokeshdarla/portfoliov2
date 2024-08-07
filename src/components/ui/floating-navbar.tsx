@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
-import { Button } from "./MovingBorder";
 
 export const FloatingNavUtil = ({
   navItems,
